@@ -28,7 +28,7 @@ a{
 	font-weight: 900;
     text-decoration: none;
     display: flex;
-    gap: 1.3rem;
+    gap: 0.6rem;
     align-items: center;
     justify-content: center;
 }
@@ -59,7 +59,7 @@ a{
 .perssen{
 	display: flex;
 	align-items: center;
-	gap: 1rem;
+	gap: 0.4rem;
 }
 .profilepic{
 	width: 2.5rem;
@@ -79,3 +79,206 @@ a{
 	color: #898a8b;
 	font-weight:800;
 }
+
+/*hom styling start here*/
+.home{
+	margin-top: 1.5rem;
+}
+.container{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.first-slide{
+	width: 18%
+}
+.thierd-slid{
+	width: 25%
+}
+.center-slide{
+	width: 49%;
+}
+.brows{
+	margin-bottom: 1.6rem;
+}
+
+.brows h2{
+	font-weight: 300;
+    font-size: 17px;
+    color : #696d97;
+}
+.listetopoc li{
+	list-style: none;
+}
+.listetopoc li a{
+	display: flex;
+	font-size: 17px;
+	font-weight: 500;
+	justify-content: space-between;
+	margin-bottom:1.4rem;
+	transition: all 0.5s ease
+}
+.listetopoc li a:hover{
+	color: #71c6dd;
+}
+.listetopoc li a span{
+	background: #3f4156;
+    padding: 4px 7px;
+    border-radius: 4px;
+}
+.blue{
+	color: #71c6dd;
+}
+.center-header{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+}
+.center-right a{
+	display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: #71c6dd;
+    padding: 11px 14px;
+    transition: 0.3s ease;
+}
+.center-right a:hover{
+	background: #aadeec;
+}
+.center-right p{
+	color: #323232;
+	font-weight: 600;
+}
+
+.center-right i{
+	color: #323232; 
+    font-weight: 700;
+}
+.centr-left h2{
+	font-size: 19px;
+    font-weight: 500;
+    color: #e5e5e5;
+}
+.centr-left p{
+	color: #696d97;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card{
+	background: #3f4156;
+    padding: 1.2rem;
+    border-radius: 17px;
+}
+.cardheader{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+.cardheader a{
+	display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.cardheader a div{
+	width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px #71c6dd solid;
+}
+.cardheader a div img{
+	width: 100%;
+    border-radius: 50%;
+}
+.cardheader a p{
+	color: #71c6dd;
+    font-weight: 500;
+}
+.cardheader  p{
+	color: #b2bdbd;
+    font-size: 13px;
+    font-weight: 500;
+}
+.card{
+	margin-bottom: 1.4rem;
+}
+.card a{
+	font-weight: 500;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    margin-bottom: 0.3rem
+}
+.card a:hover{
+	color: #71c6dd;
+}
+.para{
+	border-bottom: 1px #6f6868 solid;
+    margin-top: 0.7rem;
+    padding-bottom: 10px;
+    color: #b2bdbd;
+    font-size: inherit;
+ }
+ .card-bottom{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	margin-top: 1rem
+ }
+ .yamin{
+ 	display: flex;
+ 	align-items: center;
+ 	gap:0.6rem;
+ }
+ .card-bottom p{
+ 	background: #51546e;
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 5px 15px;
+ }
+
+.thierd-slid .thheade{
+ 	padding: 9px;
+ 	background: #696d97;
+ 	border-top-left-radius: 5px;
+ 	border-top-right-radius: 5px;
+ }
+ .body-left{
+ 	padding: 1rem;
+ 	background: #3f4156;
+ 	border-bottom-left-radius: 5px;
+ 	border-bottom-right-radius: 5px;
+ }
+ .petit-card{
+ 	border-radius: 5px;
+ 	margin-bottom: 1rem;
+    padding: 0.9rem;
+    border: 1px #6f6868 solid ;
+ }
+ .cardheader{
+ 	margin-bottom: 0px;
+ }
+ .new{
+ 	font-size: small;
+    margin-left: 40px;
+ }
+ .jdid{
+ 	color:#71c6dd;
+ 	transition: all 0.3s ease;
+ }
+ .jdid:hover{
+ 	color: white;
+ 	text-decoration: underline;
+ }
+ .contentt{
+ 	padding: 0.7rem;
+ 	border-radius: 5px;
+ 	font-size: small;
+ 	background: #2d2d39;
+ 	color: #b9b9be;
+ 	margin-top: 8px
+ }
