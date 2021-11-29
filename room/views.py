@@ -20,10 +20,12 @@ def room_list(request):
 	page_obj = paginator.get_page(page_number)
 	category = Category.objects.annotate(num_items=Count('room'))
 	x = category.count()
+	room_messages = Comment.objects.all().order_by('-id')[:5]
 	context = {
 		'room_list':page_obj,
 		'category':category,
-		'x':x
+		'x':x,
+		'room_messages':room_messages
 	}
 	return render(request,'room/index.html',context)
 

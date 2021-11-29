@@ -38,4 +38,4 @@ class Comment(models.Model):
 	room = models.ForeignKey(Room,on_delete=models.SET_NULL,null=True)
 
 	def __str__(self):
-		return str(self.user)
+		return self.body[0:50]
