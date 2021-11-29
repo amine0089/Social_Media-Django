@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate, login
 from .models import Profile
 from django.urls import reverse
 from django.contrib.auth.models import User
-from room.models import Room,Category
+from room.models import Room,Category,Comment
 from django.db.models import Count
 from django.contrib import messages
 
@@ -34,10 +34,12 @@ def profile(request, slug):
 	profile = Profile.objects.get(slug = slug)
 	rooms = Room.objects.filter(owner = profile.id)
 	category = Category.objects.annotate(num_items=Count('room'))
+	room_messages = Comment.objects.all().order_by('-id')[:5]
 	context = {
 				'profile': profile,
 				'rooms':rooms,
-				'category':category
+				'category':category,
+				'room_messages':room_messages
 	}
 	return render(request,'accounts/profile.html',context)
 

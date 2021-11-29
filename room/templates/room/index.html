@@ -44,7 +44,7 @@
           <div class="roomList__header">
             <div>
               <h2>Study Room</h2>
-              <p>7,439 Rooms available</p>
+              <p>{{y}} Rooms available</p>
             </div>
             {% if request.user.is_authenticated %}
                 <a class="btn btn--main" href="{% url 'room:create_room' %}">
